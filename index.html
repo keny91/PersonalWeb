@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <!--CONTENIDO DE LA CABECERA-->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <title>DermaSalud</title>
+  <!--INFO-->
+  <meta name="description" content="Los mejores profesionales .">
+  <meta name="author" content="Luis Herranz, Carmen Alonso">
+  <meta http-equiv="content-language" content="es"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/general.css"/>
+  <link rel="stylesheet" href="css/icons.css">
+
+  <!--SCRIPTS-->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/general.js"></script>
+
+  <!-- Creador de fiaicons: http://www.chami.com/tips/internet/110599i.html -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="over_navbar" >   
+      <div class="container">
+        <!-- AQUI LOGO -->
+        <a href="www.dermasalud.es">
+          <img height="80px" src="./img/logo cmce.png" style="margin-top:8px;" alt="logo imagen">
+        </a>
+      </div>
+    </div>
+
+    <!-- Begin Navbar -->
+
+    <nav class="navbar navbar-default nav_correct" >
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Centro Médico Concha Espina</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav_inicio" onclick = "load_Home();" class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+            <!-- <li id="nav_info" onclick = "clickInfo();" ><a href="#">INFO</a></li> -->
+            <li  id="nav_tratamientos" onclick = "" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TRATAMIENTOS<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               
+                <li onclick = "load_tratamientos_laser();"><a href="#">Tecnología Laser</a></li>
+                <li onclick = "load_tratamientos_Dgeneral();"><a href="#">Dermatología General</a></li>
+                <li onclick = "load_tratamientos_Dpediatrica();"><a href="#">Dermatología Pediátrica</a></li>
+                <li onclick = "load_tratamientos_Destetica();"><a href="#">Dermatología Estética</a></li>
+                <li onclick = "load_tratamientos_cirugiaDerm();"><a href="#">Cirugía Dermatológica</a></li>
+
+
+
+                <!-- 
+                <li class="divider"></li>
+
+                <li role="presentation" class="dropdown-header">Medicina General</li>
+                <li onclick = "load_tratamientos_laser();"><a href="#">Dermatología General</a></li>
+                <li onclick = "load_tratamientos_laser();"><a href="#">Dermatología Pediatrica</a></li>
+                <li onclick = "load_tratamientos_laser();"><a href="#">Cirugía Dermatológica</a></li> -->
+              </ul>
+            </li>
+            <li id="nav_contacto" onclick = "load_contacto();" class="active"><a href="#">CONTACTO<span class="sr-only"></span></a></li>         
+            <li id="nav_personal" onclick = "load_conocenos();" class="active"><a href="#">EQUIPO<span class="sr-only"></span></a></li>
+            
+              
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- END Navbar -->
+
+    <!--BLOQUES PARA CADA PÁGINA-->
+<div id="contenedor_bloques">
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Begin Pie de pagina -->
+
+  <div class="expositor_pie_pagina"  style="margin-top:120px;" id="pie">
+    <div class="container" >
+      <div class="row" style="padding-top:20px; padding-bottom:40px;" style="position:relative; top:-20px">
+        <h2>Información de Contacto:</h2>
+        <hr style="position:relative; top:-8px">
+
+          <div  class="row">
+
+          
+            <div class="col-md-6 col-md-offset-1 opacity_50to100"> 
+
+              <span style="margin-top: 8px;" class="col-md-1 icon icon-calendar"></span>
+             
+              
+              <p class="col-md-10" style="margin-top: -5px; ">
+              <span   class="hover_link col-md-5" style="font-size:16pt; margin-top: 16px;"  >
+                Lunes a Viernes:      
+              </span>
+              <span  class="hover_link col-md-5" style="font-size:14pt; margin-top: 18px; margin-left: 4%;" >10:00 - 20:00 </span>
+             </p>
+           
+            </div> 
+
+
+
+             <div class="col-md-5 aligned_block  opacity_50to100" >
+              <a   style="color:#FFF;" target="_blank" href="https://www.google.es/maps/place/Calle+San+Juan+de+la+Salle,+6,+28036+Madrid/@40.451323,-3.6891409,17z/data=!3m1!4b1!4m2!3m1!1s0xd4228e3b457de8d:0xc6bb95ec11ce4521">
+                <span class="col-md-1 icon icon-location" style="margin-top: 8px;"></span><span  class="col-md-11"><p class="second_font_footer" style="padding-left: 20px;"> Madrid, 28036 </p>
+                <p class="second_font_footer" style="margin-top: -5px; padding-left: 20px;"> C / San Juan de la Salle / Nº 6 / Bajo Izq </p></span>
+               <!--  <h3 style="position:relative; top:-15px">Dirección:</h3> -->
+              </a>
+            </div>
+          </div>
+
+
+          <div <span style="padding-top: 40 px;"  class="row">
+            <div class="col-md-6 col-md-offset-1 opacity_50to100">
+
+              <span style="margin-top: 8px; padding-right: 10 px;" class="col-md-1 icon icon-phone"></span>
+              <span class="col-md-11">
+              
+              <p>
+              <span  class="first_font_footer col-md-5"  >
+                Fijo:      
+              </span>
+              <span class="col-md-5 second_font_footer" > 910 824 675
+             </p>
+             
+           
+            <p>
+              <span  class="first_font_footer col-md-5" >
+                Móvil:     
+              </span>
+              <span class="col-md-5 second_font_footer"> 640 166 469</span>
+            </p>
+          
+          </span>
+
+            </div>
+
+
+
+            <!-- EN EL A -> CA,BIAR EL HREF -->
+             <a class="col-md-5 opacity_50to100" style="margin-top: 14px;" onclick = "clickContacto();" href="#">
+            <span class="col-md-1 icon icon-mail2"></span>
+            <span class="col-md-11"><p class="second_font_footer hover_link" style="padding-left:20px; font-size:15pt;"> contacto@centromedicoconchaespina.es </p></span>
+            
+          </a>
+          </div>
+
+        
+
+        <div <span style="margin-top: 10px;"  class="row">
+            <div class="col-md-6 col-md-offset-1 opacity_50to100">
+
+
+              <a class="opacity_50to100" style="margin-top: 14px;"  href="https://twitter.com/testintestin321"></a>
+              <span style="margin-top: 8px; padding-right: 0 px; margin-right: -10 px;" class="col-md-1 icon icon-twitter"></span>
+              <span class="col-md-11">
+              
+              
+            
+            <span class="col-md-11"><p class="second_font_footer hover_link" style="font-size:15pt; margin-top: 16px;"> @Dermasalud </p></span>
+            
+            </a>
+          
+          </span>
+
+            </div>
+
+            <!-- EN EL A -> CA,BIAR EL HREF -->
+             <a class="col-md-5 opacity_50to100" style="margin-top: 14px;" href="#">
+            <span class="col-md-1 icon icon-wordpress"></span>
+            <span class="col-md-11"><p class="second_font_footer hover_link" style="padding-left:20px; font-size:15pt;"> Blog Dermasalud </p></span>
+            
+            </a>
+          </div>
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- END Pie de pagina -->
+
+
+
+
+
+
+
+</body>
+</html>
