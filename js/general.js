@@ -27,27 +27,6 @@ $('body').ready(function(){
 
 
 
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(40.451846,-3.687233);
-    var mapOptions = {
-      center: myLatlng,
-      zoom: 17,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-    }
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Centro médico Concha Espina'});
-  }
-  
-  //map = new google.maps.Map(document.getElementById("map_canvas"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
-  google.maps.event.addDomListener(window, 'load', initialize());
- 
-  //google.maps.event.trigger(map, 'resize');
-
-
 
 
 
@@ -59,12 +38,6 @@ function clickInicio(){
 
   $("#contenedor_bloques").load("./html/home.html");
 
-
-  document.getElementById("nav_inicio").classList.add("active");
-/*  document.getElementById("nav_info").classList.remove("active");*/
-  document.getElementById("nav_tratamientos").classList.remove("active");
-  document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.remove("active");
 }
 
 /*function clickInfo(){
@@ -84,37 +57,6 @@ function clickInicio(){
   document.getElementById("map-canvas").style.display="block";
   initialize();
 }*/
-
-function clickTratamientos(){
-
-  document.getElementById("nav_inicio").classList.remove("active");
-  document.getElementById("nav_tratamientos").classList.add("active");
-  document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.remove("active");
-
-}
-
-function clickConocenos(){
-
-  document.getElementById("nav_inicio").classList.remove("active");
-  document.getElementById("nav_tratamientos").classList.remove("active");
-  document.getElementById("nav_personal").classList.add("active");
-  document.getElementById("nav_contacto").classList.remove("active");
-}
-
-
-function clickContacto(){
-
-  document.getElementById("nav_inicio").classList.remove("active");
-  document.getElementById("nav_tratamientos").classList.remove("active");
-  document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.add("active");
-
-  document.getElementById("map-canvas").style.display="block";
-  initialize();
- /* google.maps.event.addDomListener(window, 'load', initialize);*/
-}
-
 
 
 

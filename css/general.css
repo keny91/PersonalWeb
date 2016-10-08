@@ -46,6 +46,17 @@ body{
 
 }
 
+#rotulo_menciones h2, #rotulo_menciones h1, #rotulo_menciones h3, #rotulo_menciones p{
+
+	color: #EEE;
+}
+
+.expositor_oculto h2, .expositor_oculto h1, .expositor_oculto h3, .expositor_oculto p{
+
+	color: #EEE;
+}
+
+
 .abs_position{	position: absolute;}
 
 .nav_correct{	margin-bottom: 0px;}
@@ -55,7 +66,7 @@ body{
 	top: 0;
 	left: 0;
 
-	height: 500px;
+	height: 700px;
 	
 	/*background-size: cover;*/
 	/*background-repeat: fixed;*/
@@ -65,11 +76,25 @@ body{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
 }
 
+.section_title{
 
+
+}
+
+.img_fondo .retrato{
+	position: relative;
+	height: 30%;
+}
+
+.img_fondo .logo_rotulo{
+	position: relative;
+	margin-top: 5%;
+	height: 40%;
+}
 
 .img_fondo_info{
 	position: relative;
@@ -88,21 +113,47 @@ body{
 	
 }
 
+.section_title h1{
+	margin-top: 120px;
+
+}
+
+
 .color-container{
-	height: 264px;
+	height: 550px;
+
+}
+
+.color-container .foot{
+	height: 400px;
+	text-align: right;
+	color: #EEE;
+	font-size: 14pt;
+
+}
+
+.color-container h3{
+	/*padding-top: 0px; */
+	color: #DDD;
+	font-size:16pt;
+	text-align: center;
+    padding-bottom: 0px;
+    margin-top: 10px;
 
 }
 
 .color-container p{
    
+   	font-weight: 700;
     margin-left: 12px;
 }
 
 
 .color-container h2 {
     text-align: center;
-    padding-bottom: 5px;
-    margin-left: -12px;
+    font-size:22pt;
+    padding-top: 50px;
+    margin-left: 0px;
 }
 
 .fondo_contactos{
@@ -111,13 +162,14 @@ body{
 }
 
 .fondo_home{
-	background: url(../img/img_fondo/entrada_fix.jpg);
+	background: url(../img/PersonalWeb/HeaderImage.jpg);
 	background-size: cover;
 }
 
 .fondo_tratamientos{
 	background: url(../img/img_fondo/despacho1_2fix.jpg);
 	background-size: cover;
+
 }
 .fondo_conocenos{
 	background: url(../img/img _fondo/imagen_fondo_personal.jpg);
@@ -300,8 +352,21 @@ body{
 }
 
 .img_fondo img {
-  margin: auto;
-  vertical-align: middle;
+	/*position: relative;
+	*/
+	top: 10%;
+	display: block;
+	height: 60%;
+  	margin: auto;
+  	
+  	align:center;
+}
+
+
+.img_fondo .second_img {
+	position: relative;
+
+  	align:center;
 }
 
 .white_font{
@@ -392,7 +457,9 @@ body{
 
 .color-container{	
 	border-radius: 5px;
-	background-color: #81ABC1;}
+	background-color: #81ABC1; 
+	/* background-color: #E6AB6C;   */
+}
 
 .color-icon{
 	/*position: relative;*/
@@ -402,11 +469,15 @@ body{
 	margin-right: auto;
 /*	left: 50%;
 right: -45px;*/
-	top:45px;
-	width: 90px;
-	height: 90px;
+	top:70px;
+	width: 140px;
+	height: 140px;
 
 }
+
+
+
+
 .over-color-icon{
 	position: relative;
 	z-index: 100;
@@ -419,12 +490,24 @@ right: -45px;*/
     display: block;
   }
 
+.ref_icons{
+	position: absolute;
+	right: 5%;
+
+
+}
+.ref_icons .icon{
+	position: relative;
+	color: #FFF;
+	font-size: 42pt;
+	margin-left: 15pt;
+}
 
 #bloque_expositor.expositor_fondo{
 	top: 0;
 	left: 0;
 	/*height: 400px;*/
-	background-color: rgba(202,210,217,1);
+	background-color: #EEE;
 	background-size: 100% 600px;
 	/*background-repeat: fixed;*/
 	padding-top: 15px;
@@ -435,6 +518,31 @@ right: -45px;*/
 	padding-top: 0px;
 	padding-bottom: 0px;
 	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+
+.expositor_oculto{
+		top: 0;
+	left: 0;
+	/*height: 400px;*/
+	background-color: #333;
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 30px;
+		/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.expositor_oculto p,h2,h3{
+
+
+}
+
+#bloque_expositor.expositor_fondo{
+
 }
 
 
@@ -461,7 +569,40 @@ right: -45px;*/
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+#contenedor_imagenes{
 
+	background-color: #333;
+}
+
+
+#contenedor_imagenes hr
+{
+	margin-top: 25px;
+	color:#FFF;
+	background-color:#333; 
+	margin-bottom: 0 px;
+}
+#rotulo_menciones p, .color-container h2{
+	color: #EEE;
+}
+
+.imageContainer{
+	position: relative;
+	margin-top: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	height:100%;
+	max-height:300px;
+	text-align:center;
+}
+
+.imageContainer img{
+	position: relative;
+	max-width:100%;
+	display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    top: 20%;
+}
 
 #contenedor_imagenes.expositor_fondo{
 
@@ -469,7 +610,7 @@ right: -45px;*/
 	left: 0;
 	/*height: 400px;*/
 	
-	background-color: rgba(202,210,217,1);
+	background-color: #333;
 	background-size: 100% 600px;
 	/*background-repeat: fixed;*/
 	padding-top: 15px;
@@ -478,7 +619,7 @@ right: -45px;*/
 	/*height: inherit;*/
 	width: 100%;
 	padding-top: 10px;
-	padding-left: 15px;
+	padding-left: 0px;
 	padding-bottom: 0px;
 
 }
@@ -489,7 +630,7 @@ right: -45px;*/
 	left: 0;
 	/*height: 400px;*/
 	
-	background-color: rgba(202,210,217,1);
+	background-color: #333;
 	background-size: 100% 600px;
 	/*background-repeat: fixed;*/
 
@@ -563,7 +704,8 @@ p.hover_link:hover{
 
 .remark-cite{
 
-	background-color:rgba(180,180,230,1);
+	/* background-color:rgba(180,180,230,1); */
+	background-color:#333;
 	position: relative;
 	display: block;
 	
@@ -590,6 +732,33 @@ p.hover_link:hover{
 	text-align: left;
 
 }
+
+.expositor_about{
+	background-color: #333;
+	/*height: 600px;*/
+
+	padding-top: 35px;
+	padding-bottom: 40px;
+
+}
+
+.expositor_about h3{
+	color: #EEE;
+	font-weight:700;
+
+}
+
+.expositor_about .about_description{
+	margin-top: 20px;
+	
+}
+
+.expositor_about p{
+	margin-left: 25px;
+	font-weight: 600;
+	color: #EEE;
+}
+
 
 .third_font_footer{
 
@@ -824,6 +993,11 @@ figure.effect:hover .trophy {
 	padding-left: 20px;
 	font-weight: bold;
 	}
+
+.color-container p{
+	position: relative; 
+	top: 10px;
+}
 
 .color-container p a:hover{	
 	color: #000;
