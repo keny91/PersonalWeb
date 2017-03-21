@@ -75,7 +75,7 @@ I am considered as a cheerful and active person. As I mentioned, I feel like I c
     <div class="container section_title">
       <div class="row">
 
-        <h1>Proffessional Education:</h1>
+        <h1 style="align-content: center;">Proffessional Formation:</h1>
       </div>
     </div>
 
@@ -96,7 +96,7 @@ I am considered as a cheerful and active person. As I mentioned, I feel like I c
 
                 <p style="">Apart from the previous knowledge the degree allowed to gather proficiency with programing languajes such as Matlab, C, Java and web development tools. Achieved Honorable mention in the final thesis.</p>
                 <p><a  class="" target="_blank" href="https://github.com/keny91/Automatic-Places-of-Interest-Detection" role="button" style="position: relative;
-top: 20px;">Final Thesis´s Project &raquo; </a></p>
+top: 20px;">Final Thesis´s Project &raquo;</a></p>
 
 
               </div>
@@ -132,6 +132,21 @@ top: 20px;">Final Thesis´s Project &raquo;</a></p>
       </div>
     </div>
 
+<div class="container" style="margin-bottom: 20pt;">
+  <div class="col-md-3 imageContainer">
+    <img src="./img/PersonalWeb/logokoski.png">
+  </div>
+
+  <div class="col-md-8 col-md-offset-1">
+    <h2 class="">Lead Software Developer:</h2>
+    <h3 class="">Koski LTD. [2016-...]</h3>
+    <p style="">Part of a small StartUp; charged with all software development required in the projects. </p>
+
+    <p style=""> Using Unity3d as the deployment tool to develop for multiple platforms, we create Mixed Reality applications and games. The projects relly heavilly in other libraries such as OpenCV and Vuforia.  </p>
+  </div>
+</div>
+
+
 <div class="container" style="">
   <div class="col-md-3 imageContainer">
     <img src="./img/PersonalWeb/anaya.png">
@@ -145,6 +160,9 @@ top: 20px;">Final Thesis´s Project &raquo;</a></p>
     <p style="">My work was to create HTML templates includying any required CSS and JavaScript. The job required coordination between different specialist, incluying senior programmers or graphic designers. </p>
   </div>
 </div>
+
+
+
 
 
       <!-- Begin extra expositor -->
@@ -346,22 +364,45 @@ top: 20px;">Final Thesis´s Project &raquo;</a></p>
 
         <h1>Programming Languages:</h1>
         <h2>Under Construction</h2>
+
+
+
+
+
+            <div class="br-wrapper br-theme-bars-movie"><select id="example-movie" name="rating" autocomplete="off" style="display: none;">
+                  <option value="Poor">Bad</option>
+                  <option value="Mediocre">Mediocre</option>
+                  <option value="Good" selected="selected">Good</option>
+                  <option value="Great">Great</option>
+                  <option value="Profficient">Awesome</option>
+                </select>
+
+                <div class="br-widget">
+                  <a  data-rating-value="Bad" data-rating-text="Bad" class="br-selected"></a>
+                  <a data-rating-value="Mediocre" data-rating-text="Mediocre" class="br-selected"></a>
+                  <a data-rating-value="Good" data-rating-text="Good" class="br-selected"></a>
+                  <a  data-rating-value="Great" data-rating-text="Great" class="br-selected br-current"></a>
+                  <a data-rating-value="Awesome" data-rating-text="Awesome" class=""></a>
+                  <div class="br-current-rating">Good</div>
+                </div>
+              </div>
+
+
+
+
       </div>
     </div>
 
     <div class="row programming_skills">
-      <fieldset class="rating">
-      <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-      <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-      <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-      <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-      <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-    </fieldset>
+
+
+
+                <select id="example-movie" name="rating" autocomplete="off" style="display: none;">
+                  <option value="Bad">Bad</option>
+                  <option value="Mediocre">Mediocre</option>
+                  <option value="Good" selected="selected">Good</option>
+                  <option value="Awesome">Awesome</option>
+                </select>
         
       </div>
 
@@ -376,6 +417,27 @@ top: 20px;">Final Thesis´s Project &raquo;</a></p>
 
 <!-- </div> -->
 
+<script type="text/javascript">
+
+
+   $(function() {
+      $('#example').barrating({
+        theme: 'bars-movie',
+        initialRating: 2,
+        showValues: true,
+        showSelectedRating: false,
+        allowEmpty: true
+      });
+
+      $('#example').barrating('show');
+      $('select').barrating('set', 2);
+   });
+</script>
+
+
 </body>
+
+
+
 
 </html>

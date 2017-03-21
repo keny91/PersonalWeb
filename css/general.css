@@ -35,7 +35,14 @@ body{
 
 fieldset, label { margin: 0; padding: 0; }
 
-h1 { font-size: 1.5em; margin: 10px; }
+h1 { font-size: 2.5em; 
+
+	font-family: "Times New Roman";
+	text-decoration: underline;
+	text-align: center;
+	margin: 10px; 
+	margin-left: -5%;
+}
 
 /****** Style Star Rating Widget *****/
 
